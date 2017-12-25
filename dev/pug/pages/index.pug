@@ -1,6 +1,63 @@
 extends ../includes/template
+block header
+  header(itemscope itemtype="http://schema.org/WPHeader").main-header
+    .ed-container
+      .ed-item.s-40.l-15.cross-center(itemscope itemtype="http://schema.org/Organization")
+        a(href="/" itemprop="url")
+          img(alt="Imagotipo de EDteam" itemprop="logo" src="https://ed.team/themes/custom/escueladigital/img/EDteam-logo.svg" title="Imagotipo de EDteam").main-logo
+      .ed-item.s-40.l-85.cross-center.main-end
+        nav(itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation").main-menu
+          ul
+            li
+              a(href="//ed.team/equipo" itemprop="url") ¿Quiénes somos?
+            li
+              a(href="//ed.team/cursos" itemprop="url") Cursos
+            li
+              a(href="//ed.team/profesores" itemprop="url") Profesores
+            li
+              a(href="//ed.team/blog" itemprop="url") Blog
+            li
+              a(href="//ed.team/ayuda.ed.team" itemprop="url") Ayuda
 block main
-  .ed-container
-    .ed-item
-      h1 Hola mundo
-      p Proyecto funcionando
+  .ed-container.main-section
+    aside(itemscope="itemscope" itemtype="http://schema.org/WPSideBar" role="complementary").ed-item.l-25.main-sidebar.sidebar-first
+      nav(itemscope itemtype="http://schema.org/WPSideBar").vertical-menu
+        ul
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/comenzar" itemprop="name") Comenzar con EDgrid
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/estructura" itemprop="name") Estructura de archivos
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/css" itemprop="name") CSS
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/sass" itemprop="name") Sass
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/flujo" itemprop="name") Flujo de trabajo (CSS/Sass)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/configurar" itemprop="name") Configurar (Sass)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/componentes/base" itemprop="name") Base (CSS/Sass)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/componentes/core" itemprop="name") Core (CSS/Sass)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/mediaqueries" itemprop="name") Mediaqueries (Sass)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/modo-dev" itemprop="name") Modo dev
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/componentes/grid" itemprop="name") Grid (Sass/CSS)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/componentes/visibilidad" itemprop="name") Visibilidad (CSS/Sass)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/componentes/flexbox" itemprop="name") Flexbox (CSS/Sass)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/funciones" itemprop="name") Funciones (Sass)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/helpers" itemprop="name") Helpers (CSS/Sass)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/offset" itemprop="name") Offset (Sass/CSS)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/videos" itemprop="name") Videos responsive (Sass/CSS)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/botones" itemprop="name") Botones (Sass/CSS)
+          li(itemprop="url")
+            a(href="//ed.team/edgrid/docs/menus" itemprop="name") Menus (Sass/CSS)
