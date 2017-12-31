@@ -1,0 +1,102 @@
+extends ../includes/template
+
+block main
+  include ../includes/navigation
+  .ed-container.main-section
+    include ../includes/menu
+    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
+      h1 Estructura
+      p La siguiente es la estructura de archivos de ed-grid. Solo se explican los archivos y directorios propios del proyecto y no las herramientas comunes de desarrollo (package.json, .gitignore, etc)
+      ul
+        li
+          strong components
+          | / Carpeta con componentes de ed-grid
+          ul
+            li
+              strong ​​_base.scss 
+              | Estilos base para rwd
+            li
+              strong _buttons.scss 
+              |  Mixin para botones
+            li
+              strong _core.scss 
+              |  Core de ed-grid con los containers, items y el grid base
+            li
+              strong _css-core.scss 
+              |  Mixins Sass incluidos para ser compilados a css (si usará la versión css)
+            li
+              strong _css-hepers.scss 
+              |  Ayudas al trabajo
+            li
+              strong _dev.scss 
+              |  Mixins para el modo dev (desarrollo en versiones previas)
+            li
+              strong _ed-medu.scss 
+              |  Mixins para crear menús rwd
+            li
+              strong _flexbox.scss 
+              |  Mixins para trabajar con flexbox
+            li
+              strong _functions.scss 
+              |  Funciones para transformar pixeles a em y rem
+            li
+              strong _grid.scss 
+              |  Mixins para crear grids (cuadriculas) rwd
+            li
+              strong _helpers.scss 
+              |  Mixins de ayuda para maquetación
+            li
+              strong _media-queries.scss 
+              |  Mixins para trabajar fácilmente con media queries
+            li
+              strong _offset.scss 
+              |  Mixins para crear offsets a los items
+            li
+              strong _video.scss 
+              |  Mixin para videos rwd
+            li
+              strong _visibility.scss 
+              |  Mixins para controlar la visibilidad de elementos según el breakpoint
+        li
+          strong css 
+          | / Carpeta con la versión css de ed-grid
+          ul
+            li
+              strong ​​ed-grid.css 
+              | Version css de ed-grid (si va a trabajar sin Sass)
+            li
+              strong ed-grid.min.css 
+              | Versión css de ed-grid minificada
+        li
+          strong js
+          | /
+          ul
+            li
+              strong babel
+              | /
+              ul
+                li index.js
+                li menu.js
+                li migrate.js
+                li util.js
+            li ed-grid.js Scripts compilados para importar en su proyecto (incluye menu y migrate)
+        li
+          strong test
+          | / Carpeta para testear ed-grid
+          ul
+            li
+              strong ​​index.html
+            li
+              strong style.css
+            li
+              strong style.scss 
+              | Archivo desde el que se importa ed-grid y compila a styles.css
+        li .babelrc
+        li  .editorconfig
+        li  .gitattributes
+        li  .gitignore
+        li  .npmignore
+        li  README.md
+        li  ed-grid.scss Archivo principal de ed-grid, es el que debe ser importado en su proyecto
+        li  gulpfile.babel.js
+        li  package.json

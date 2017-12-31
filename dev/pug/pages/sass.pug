@@ -1,0 +1,34 @@
+extends ../includes/template
+
+block main
+  include ../includes/navigation
+  .ed-container.main-section
+    include ../includes/menu
+    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
+      h1 Sass
+      p Si va a trabajar con Sass, tenga en cuenta que 
+        a(href="css") como se explicó aquí
+        | , ed-grid genera dos grupos de código css:
+      ul
+        li 
+          code cssCore 
+          | no recomendado si va a trabajar con Sass (desactivado por defecto para Sass)
+        li 
+          code  cssHelpers 
+          | recomendado si va a trabajar con Sass (activado por defecto para Sass, puede desactivarlo si es un usuario avanzado)
+      p Para activar o desactivar estos componentes redefina las variables 
+        code $cssCore 
+        | y 
+        code $cssHelpers 
+        | antes de importar ed-grid.  
+      include:markdown-it ../../md/sass-1.md
+      p Se recomienda añadir los siguientes plugins de postCSS al compilar la versión Sass:
+      ul
+        li 
+          a(href="http://autoprefixer.github.io/" target="_blank") autoprefixer 
+          | - añade los prefijos necesarios para asegurar compatibilidad entre navegadores
+        li
+          a(href="http://cssnano.co/" target="_blank") cssnano 
+          | - minifica, optimiza y compacta el código CSS.
+      p El siguiente es un flujo recomendado con Gulp
+      include:markdown-it ../../md/sass-2.md

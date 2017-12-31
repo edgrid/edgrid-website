@@ -1,0 +1,54 @@
+extends ../includes/template
+
+block main
+  include ../includes/navigation
+  .ed-container.main-section
+    include ../includes/menu
+    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
+      h1 Grid (CSS/Sass)
+      p El componente grid nos permite crear cuadriculas a través de un contenedor para la cuadricula y elementos (hijos directos de este contenedor) que serán los items de esta cuadricula.
+      p Ejemplo de grid (cuadricula). Las cuadriculas no son solo de imágenes, puede usarlas con cualquier tipo de elemento.
+      h2 Uso con CSS (cssCore)
+      p En CSS EDgrid cuenta con dos grids preconstruidos: 
+        code 1,2,3,4 
+        | y 
+        code 2,3,4,5 
+        | (los números representan las columnas en cada breakpoint de ed-grid).
+      p Para utilizarlos, use la clase 
+        code grid-container 
+        | en el contedor, además la clase 
+        code grid-1234 
+        | o 
+        code grid-2345 
+        | para indicar el tipo de grid.
+      p Por último, a cada item de la galeria asignele la clase 
+        code grid-item
+      include:markdown-it ../../md/grid-1.md
+      h2 Uso con Sass
+      p Para Sass, use el mixin 
+        code grid($item,$s $m $l $xl,$gutter) 
+        | aplicado al contenedor del grid. Los parámetros son:
+      ul
+        li 
+          code $item 
+          | (obligatorio) es el selector css de cada item del grid. Debe pasarse entrecomillado.
+        li 
+          code $s $m $l $xl 
+          | (solo el primero obligatorio) son el número de columnas en cada breakpoint de EDgrid (separados por espacios)
+          ul
+            li Los breakpoints superiores heredaran el número de columnas del último breakpoint declarado en el mixin
+        li 
+          code $gutter 
+          | (opcional) es la separación entre los items. Solo se aceptan 
+          code em
+          | ,
+          code rem 
+          | o 
+          code px.
+      p Ejemplo, para el siguiente HTML:
+      include:markdown-it ../../md/grid-2.md
+      p Crearemos un grid 1,1,2,3
+      include:markdown-it ../../md/grid-3.md
+      p Que compilará a
+      include:markdown-it ../../md/grid-4.md
+

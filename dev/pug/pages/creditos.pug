@@ -1,0 +1,13 @@
+extends ../includes/template
+
+block main
+  include ../includes/navigation
+  .main-banner--accent.main-banner
+    .ed-container
+      .ed-item.l-75.to-center
+        img(src="https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg").main-banner__img
+        .main-banner__data
+          h1 Créditos
+  .ed-container.main-section
+    include ../includes/menu
+    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
