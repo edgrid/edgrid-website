@@ -1,6 +1,5 @@
 extends ../includes/template
 
-
 block main
   include ../includes/navigation
   .main-banner--.main-banner
@@ -8,11 +7,39 @@ block main
       .ed-item.l-75.to-center
         img(src="https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg").main-banner__img
         .main-banner__data
-          h1 EDgrid
-          p.subtitle Hacer páginas web responsive, nunca fue tan rápido
+          h2 EDgrid
+          p.subtitle Páginas web y apps responsive a la velocidad de la luz
           .center
             a.button--cta Slack
-            a.button--cta Github
-            a.button--cta.button--last(href="comenzar.html") Documentación
-  include ../includes/menu
+            a.button--cta.button--dark(href="https://github.com/escueladigital/EDgrid") Github
+            a.button--tertiary.button--last(href="comenzar.html") Documentación
+  .main-features
+    .ed-container
+      h1.t1.to-center El responsive web design nunca fue tan sencillo
+      .ed-container
+        .ed-item.l-1-3.center.main-features__content
+          .main-features__img
+          h2 ¿Qué es?
+          p ED GRID es un Framework Css para Responsive Web Design (RWD) construido sobre Sass. Es muy ligero, personalizable y te permite prototipar y crear layouts en muy poco tiempo.
+        .ed-item.l-1-3.center.main-features__content
+          .main-features__img
+          h2 RWD puro
+          p No añade botones, tipografías, colores ni otro estilo visual. Es RWD puro para maquetar. Así que hasta proyectos en desarrollo (o terminados) pueden incluirlo sin temor a los conflictos.
+        .ed-item.l-1-3.center.main-features__content
+          .main-features__img
+          h2 Open Source
+          p Completamente gratuito y de código abierto. Puede usarlo en proyectos comerciales, descargarlo y estudiar el código y crear sus propias versiones derivadas.
+        .ed-item.l-1-3.center.main-features__content
+          .main-features__img
+          h2 100% Responsive
+          p ED GRID usa todo el poder de Flexbox para crear layouts imposibles para otros frameworks (que usan floats).
+        .ed-item.l-1-3.center.main-features__content
+          .main-features__img
+          h2 Adiós columnas
+          p ¿Cansado de las 12 columnas? ED GRID no las usa para que al fin tengas la libertad de definir tu layout (y no tener páginas que se parecen entre todas).
+        .ed-item.l-1-3.center.main-features__content
+          .main-features__img
+          h2 100% en español
+          p ED GRID es el único framework css 100% en español. Con documentación detallada, workshops gratuitos en video y soporte permanente.
+
   include ../includes/footer

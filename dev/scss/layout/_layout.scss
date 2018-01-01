@@ -1,5 +1,53 @@
 .main-banner{
-	.button--last{
-		margin-right: 0;
-	}
+  img{
+    max-width: 20%;
+    display: block;
+  }
+  .button--last{
+    margin-right: 0;
+  }
+}
+
+.main-features{
+  .main-features__content{
+    .main-features__img{
+      display: block;
+      margin: 0 auto .5em;
+      width: 200px;
+      height: 98.03922px;
+      background: url(../images/ed-grid--features.png);
+      background-size: 200px;
+    }
+  }
+  .main-features__content:first-child{
+    .main-features__img{
+      background-position:0 0; 
+    }
+  } 
+  .main-features__content:nth-child(2){
+    .main-features__img{
+      background-position:0 -98.03922px; 
+    }
+  } 
+  .main-features__content:nth-child(3){
+    .main-features__img{
+      background-position:0 -196.07843px; 
+    }
+  } 
+  .main-features__content:nth-child(4){
+    .main-features__img{
+      background-position:0 -294.11765px; 
+    }
+  } 
+  .main-features__content:nth-child(5){
+    .main-features__img{
+      background-position:0 -392.15686px; 
+    }
+  } 
+  .main-features__content:nth-child(6){
+    .main-features__img{
+      background-position:0 -490.19608px; 
+    }  
+  } 
+
 }
