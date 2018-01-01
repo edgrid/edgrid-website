@@ -81,4 +81,16 @@ block main
         ```
       h2 Hacer un elemento circular
       p Tenga en cuenta que si el alto y el ancho no son iguales, el elemento no será circular sino oval.
+      h4 Versión con css
+      :markdown-it
+        ```
+        <!-- Version CSS -->
+        <div class="full"><!-- Este elemento medirá 100% de ancho siempre --></div> 
+        ```
+      h4 Versión con Sass
+      :markdown-it
+        ```
+        // Uso con Sass
+        .selector { @include full }
+        ```
   include ../includes/footer
