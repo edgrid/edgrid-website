@@ -1,0 +1,41 @@
+extends ../includes/template
+
+block main
+  include ../includes/navigation
+  .ed-container.main-section
+    include ../includes/menu
+      block link-section
+        - var active = 'Core (CSS/Sass)';
+    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
+      h1 Core (CSS/Sass)
+      p El componente core es el que genera los ed-container y ed-item y sus dimensiones.
+      h2 Uso con CSS (cssCore)
+      p Para la version CSS, basta con seguir los pasos para los 
+        code ed-container
+        | y 
+        code ed-item 
+        | indicados en el flujo de trabajo con ed-grid
+      h2 Sass
+      p Si se trabaja con Sass, es recomendable tener la variable 
+        code $cssHelpers 
+        | en 
+        code true 
+        | para que se compilen los tamaños para los 
+        code ed-item 
+        | y seguir el flujo de trabajo recomendado con ed-grid
+      p Además puede hacer que cualquier elemento sea un ed-container y un ed-item usando los mixins 
+        code edContainer() 
+        | y
+        code edItem()
+      include:markdown-it ../../md/core-1.md
+      include:markdown-it ../../md/core-2.md
+      p El scss anterior compila a:
+      include:markdown-it ../../md/core-3.md
+      p El mixin 
+        code edItem() 
+        | recibe 4 parametros, los cuatro opcionales. Uno por cada breakpoint 
+        code s, m, l, xl 
+        | puede pasar el tamaño que desee, incluso fracciones. Por ejemplo:
+      include:markdown-it ../../md/core-4.md
+      p Compila a
+      include:markdown-it ../../md/core-5.md

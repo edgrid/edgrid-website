@@ -1,0 +1,18 @@
+extends ../includes/template
+
+block main
+  include ../includes/navigation
+  .ed-container.main-section
+    include ../includes/menu
+      block link-section
+        - var active = 'Configurar (Sass)';
+    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
+      h1 Configurar (Sass)
+      p Si va a trabajar con Sass lo primero es importarlo en su proyecto.
+      include:markdown-it ../../md/configurar-1.md
+      p Sin embargo, ed-grid posee un archivo config.scss que define las variables y que pueden sobreescribirse (antes de la importación). Recomendamos fijarse en estas tres variables
+      include:markdown-it ../../md/configurar-2.md
+      p Así que el modo recomendado de importar ed-grid es el siguiente:
+      include:markdown-it ../../md/configurar-3.md
+      p Otras variables en config que podría redefinir (solo para usuarios avanzados) son:
+      include:markdown-it ../../md/configurar-4.md

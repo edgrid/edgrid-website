@@ -1,0 +1,10 @@
+extends ../includes/template
+
+block main
+  include ../includes/navigation
+  .ed-container.main-section
+    include ../includes/menu
+      block link-section
+        - var active = 'Flexbox (CSS/Sass)';
+    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
+      h1 Flexbox (CSS/Sass)

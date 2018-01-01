@@ -1,0 +1,52 @@
+extends ../includes/template
+
+block main
+  include ../includes/navigation
+  .ed-container.main-section
+    include ../includes/menu
+      block link-section
+        - var active = 'Visibilidad (CSS/Sass)';
+    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
+      h1 Visibilidad (CSS/Sass)
+      p El componente visibilidad permite definir los breakpoints en los que un elemento se mostrará y los breakpoints en los que se ocultará.
+      h2 Uso con CSS (cssHelpers)
+      p Use las clases 
+        code from-bp 
+        | o 
+        code to-bp 
+        | donde bp es un breakpoint válido de ed-grid (
+        code s,m,l,xl
+        | )
+      p 
+        code from-bp 
+        | hará al elemento visible a partir del breakpoint especificado e invisible por debajo de él.
+      p 
+        code to-bp 
+        | hará al elemento visible por debajo del breakpoint especificado e invisible por encima de él.
+      h2 Uso con Sass
+      p En la versión Sass cuenta con cuatro mixins que reciben como parámetro un breakpoint del core de ed-grid ( 
+        code s,m,l,xl
+        | ) o uno en 
+        code px
+        | ,
+        code em 
+        | o 
+        code rem
+        | .
+      ul
+        li 
+          code showFrom($bp) 
+          | Muestra el elemento solo por encima del breakpoint especificado en el parámetro.
+        li 
+          code showTo($bp) 
+          | Muestra el elemento solo por debajo del breakpoint especificado en el parámetro.
+        li 
+          code hideFrom($bp) 
+          | Oculta el elemento por encima del breakpoint especificado en el parámetro.
+        li 
+          code hideTo($bp) 
+          | Oculta el elemento por debajo del breakpoint especificado en el parámetro.
+      p Ejemplo
+      include:markdown-it ../../md/visibilidad-1.md
+      p Compila a
+      include:markdown-it ../../md/visibilidad-2.md

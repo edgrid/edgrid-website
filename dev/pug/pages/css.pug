@@ -1,0 +1,54 @@
+extends ../includes/template
+
+block main
+  include ../includes/navigation
+  .ed-container.main-section
+    include ../includes/menu
+      block link-section
+        - var active = 'CSS';
+    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
+      h1 CSS
+      p La principal diferencia de ed-grid 2 con su versión anterior es que podemos decidir qué componentes compilar a CSS. En la versión 1, todo el CSS era compilado generando código innecesario.
+      p Si usted desea puede trabajar solo con la versión CSS de ed-grid 2, y añadir clases al código HTML para construir su layout según el 
+        a(href="flujo.html" ) flujo de trabajo recomendado.
+      p El CSS de ed-grid 2 se clasifica en 2 grupos:
+      ul
+        li
+          strong cssCore
+          ul
+            li offset
+            li flexbox
+            li grid
+            li 
+              a(href="modo-dev") devMode 
+              | Genera el modo dev para visualizar la construcción del layout
+            li botones
+            li ed-menu
+        li
+          strong cssHelpers
+          ul
+            li 
+              a(href="flujo.html") coreGrid 
+              | el núcleo de ed-grid 2 con los tamaños y los breakpoints
+            li 
+              a(href="helpers.html") helpers 
+              | ayudas comunes al trabajo
+            li 
+              a(href="flexbox.html") flexCssHelpers 
+              | alineación en ejes, orientación y centrado absoluto sin tomar en cuenta el breakpoint (se aplica a todos)
+              ul
+                li .main-justify  
+                li .main-distribute
+                li .main-center
+                li .main-start
+                li .main-end
+                li .cross-start
+                li .cross-center
+                li .cross-end
+                li .flex-reverse
+                li .flex-column
+                li .flex-column-reverse 
+                li .abcenter
+            li
+              a(href="visibilidad") visibility 
+              | clases para visibilidad
