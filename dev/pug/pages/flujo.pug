@@ -4,6 +4,8 @@ block main
   include ../includes/navigation
   .ed-container.main-section
     include ../includes/menu
+      block link-section
+        - var active = 'Flujo de trabajo (CSS/Sass)';
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Flujo de trabajo (CSS/Sass)
       h2 Sass o CSS

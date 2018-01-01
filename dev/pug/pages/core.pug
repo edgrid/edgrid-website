@@ -4,6 +4,8 @@ block main
   include ../includes/navigation
   .ed-container.main-section
     include ../includes/menu
+      block link-section
+        - var active = 'Core (CSS/Sass)';
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Core (CSS/Sass)
       p El componente core es el que genera los ed-container y ed-item y sus dimensiones.
