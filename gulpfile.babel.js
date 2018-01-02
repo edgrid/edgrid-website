@@ -96,6 +96,7 @@ gulp.task('default', () => {
   watch('./dev/scss/**/*.scss', () => gulp.start('styles'));
   watch('./dev/js/**/*.js', () => gulp.start('scripts',server.reload) );
   watch('./dev/pug/**/*.pug', () => gulp.start('pug', server.reload) );
+  watch('./dev/md/docs/**/*.md', () => gulp.start('pug', server.reload) );//tarea para que compile pug cuando se modifica algun md en el directorio docs, antes de esta tarea, se tenia que modificar un archivo pug para que recien compie y muestre los cambios en md
   watch('./dev/images/**/*.{png,jpg,jpeg,gif}', () => gulp.start('images') );
   watch('./dev/images/**/*.svg', () => gulp.start('copy') );
 });
