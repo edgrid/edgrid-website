@@ -8,3 +8,29 @@ block main
         - var active = 'Funciones (Sass)';
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Funciones (Sass)
+      p EDgrid incluye dos funciones útiles en el RWD: 
+        code em($px)
+        | y 
+        code rem($px)
+      p Estas funciones convierten un número en 
+        code px
+        | a 
+        code em 
+        | o 
+        code rem respectivamente.
+      :markdown-it
+        ```
+        .selector {
+          font-size: em(15px);
+          max-width : rem(1000px);
+         }
+        ```
+      p Compila a: 
+      :markdown-it
+        ```
+        .selector{
+          font-size:.9375em;
+          max-width:62.5rem;
+        }
+        ```
+      p Estas funciones lanzarán un error si le pasa un valor diferente a un número en pixeles

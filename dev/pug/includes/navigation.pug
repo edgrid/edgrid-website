@@ -12,8 +12,8 @@ header(itemscope itemtype="http://schema.org/WPHeader").main-header
       nav(itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation").main-menu#main-menu
         ul
           each val, key in menu
-            li(itemprop="url")
-              if active === key
-                a.active(href=val itemprop="name" title=key)= key
-              else
-                a(href=val itemprop="name" title=key id=active)= key
+                li(itemprop="url")
+                  if active === key
+                    a.active(href=val itemprop="name" title=key)= key
+                  else
+                    a(href=val itemprop="name" title=key id=active)= key
