@@ -1,23 +1,23 @@
 extends ../config/template
 append config
-  -title = "Base"
-  -description = "Bla bla bla"
-  -active = "Helpers (CSS/Sass)"
+  -title = "EDgrid | Inicio"
+  -description = "EL RESPONSIVE WEB DESIGN NUNCA FUE TAN SENCILLO. ¿Qué es? ED GRID es un Framework Css para Responsive Web Design (RWD) construido sobre Sass."
+  -ogUrl = "/index.html"
 
 block main
   .main-banner--.main-banner
     .ed-container
       .ed-item.l-75.to-center
-        img(src="https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg").main-banner__img
+        img(alt="" src="https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg").main-banner__img
         .main-banner__data
           h1 EDgrid
           p.subtitle Páginas web y apps responsive a la velocidad de la luz
           .center
             a.button--cta Slack
-            a.button--cta.button--dark(href="https://github.com/escueladigital/EDgrid") Github
+            a.button--cta.button--dark(href="https://github.com/escueladigital/EDgrid" target="_blank") Github
             a.button--tertiary.button--last(href="comenzar.html") Documentación
   .main-features
-    .ed-container
+    .ed-container.main-section
       h2.to-center El responsive web design nunca fue tan sencillo
       .ed-container
         .ed-item.l-1-3.center.main-features__content

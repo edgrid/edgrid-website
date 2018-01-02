@@ -6,4 +6,4 @@ block link-section
 ul
   each val, key in menu
     li(itemprop="url")
-      a(href=val itemprop="name" title=key)= key
+      a(href=val itemprop="name" title= "Enlace de " + key)= key

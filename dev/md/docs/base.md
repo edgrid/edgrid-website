@@ -1,4 +1,7 @@
-```
+# Base (CSS/Sass)
+Los estilos base normalizan los elementos HTML para Responsive Web Design.
+
+```scss
 *,
 *:before,
 *:after {

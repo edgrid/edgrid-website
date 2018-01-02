@@ -1,36 +1,11 @@
 extends ../config/template
 append config
-  -title = "Base"
-  -description = "Bla bla bla"
-  -active = "Modo dev"
+  -title = "EDgrid | Modo dev"
+  -description = "El modo dev (modo desarrollo en versiones anteriores) es una característica exclusiva de ed-grid (no existente en otros frameworks) que nos permite saber el breakpoint actual y los componentes del layout (ed-container y ed-item). Al activarlo el navegador muestra el layout de la siguiente manera: En la parte superior en una franja azul se muestra el breakpoint actual y la leyenda de colores para el ed-container y los ed-item. El layout de la página es coloreado de la siguiente manera:"
+  -ogUrl= "/modo-dev.html"
 
 block main
   .ed-container.main-section
     include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
-      h1 Modo dev
-      p El modo dev (modo desarrollo en versiones anteriores) es una característica exclusiva de ed-grid (no existente en otros frameworks) que nos permite saber el breakpoint actual y los componentes del layout (ed-container y ed-item).
-      p Al activarlo el navegador muestra el layout de la siguiente manera:
-      p En la parte superior en una franja azul se muestra el breakpoint actual y la leyenda de colores para el 
-      code ed-container 
-      | y los 
-      code ed-item
-      p El layout de la página es coloreado de la siguiente manera:
-      ul
-        li Los ed-container tienen un borde rojo y en la parte superior una franja roja que imprime sus clases html.
-        li Los ed-items están coloreados de azul y amarillo
-          ul 
-            li Las franjas azules muestran el ancho total de cada ed-item además de sus clases
-            li La parte amarilla muestra el área disponible para contenido en el ed-item (recuerde que usan padding laterales para crear las separaciones entre ellos).
-      h2 Uso en CSS (cssCore)
-      p Basta con añadirle la clase dev al elemento body
-      include:markdown-it ../../md/modo-dev-1.md
-      h2 Activar el modo dev en Sass
-      p Redefinir la variable 
-        code $devMode 
-        | a 
-        code true 
-        | antes de importar 
-        code ed-grid
-      include:markdown-it ../../md/modo-dev-2.md
-  include ../includes/footer
+      include:markdown-it ../../md/docs/modo-dev.md
