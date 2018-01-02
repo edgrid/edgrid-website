@@ -15,6 +15,11 @@ import imagemin from 'gulp-imagemin';
 import pngcrush from 'imagemin-pngcrush';
 import notify from 'gulp-notify';
 
+
+var imagemin = require('gulp-imagemin');
+var pngcrush = require('imagemin-pngcrush');
+var notify = require('gulp-notify');
+
 const server = browserSync.create();
 
 const postcssPlugins = [
