@@ -1,11 +1,12 @@
-extends ../includes/template
+extends ../config/template
+append config
+  -title = "Base"
+  -description = "Bla bla bla"
+  -active = "Flexbox (CSS/Sass)"
 
 block main
-  include ../includes/navigation
   .ed-container.main-section
-    include ../includes/menu
-      block link-section
-        - var active = 'Flexbox (CSS/Sass)';
+    include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Flexbox (CSS/Sass)
       p El core de ed-grid está construido con flexbox, cero floats, display:table, inline-blocks u otros hacks extraños. Sin embargo, ed-grid ofrece mcuhas utilidades extra para aprovechar el poder de flexbox.

@@ -1,11 +1,12 @@
-extends ../includes/template
+extends ../config/template
+append config
+  -title = "Base"
+  -description = "Bla bla bla"
+  -active = "Modo dev"
 
 block main
-  include ../includes/navigation
   .ed-container.main-section
-    include ../includes/menu
-      block link-section
-        - var active = 'Modo dev';
+    include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Modo dev
       p El modo dev (modo desarrollo en versiones anteriores) es una característica exclusiva de ed-grid (no existente en otros frameworks) que nos permite saber el breakpoint actual y los componentes del layout (ed-container y ed-item).

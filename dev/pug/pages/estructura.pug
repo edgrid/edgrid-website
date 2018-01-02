@@ -1,11 +1,12 @@
-extends ../includes/template
+extends ../config/template
+append config
+  -title = "Base"
+  -description = "Bla bla bla"
+  -active = "Estructura de archivos"
 
 block main
-  include ../includes/navigation
   .ed-container.main-section
-    include ../includes/menu
-      block link-section
-        - var active = 'Estructura de archivos';
+    include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Estructura
       p La siguiente es la estructura de archivos de ed-grid. Solo se explican los archivos y directorios propios del proyecto y no las herramientas comunes de desarrollo (package.json, .gitignore, etc)
@@ -102,4 +103,3 @@ block main
         li  ed-grid.scss Archivo principal de ed-grid, es el que debe ser importado en su proyecto
         li  gulpfile.babel.js
         li  package.json
-  include ../includes/footer

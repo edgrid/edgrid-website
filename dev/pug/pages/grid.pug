@@ -1,11 +1,12 @@
-extends ../includes/template
+extends ../config/template
+append config
+  -title = "Base"
+  -description = "Bla bla bla"
+  -active = "Grid (Sass/CSS)"
 
 block main
-  include ../includes/navigation
   .ed-container.main-section
-    include ../includes/menu
-      block link-section
-        - var active = 'Grid (Sass/CSS)';
+    include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Grid (CSS/Sass)
       p El componente grid nos permite crear cuadriculas a través de un contenedor para la cuadricula y elementos (hijos directos de este contenedor) que serán los items de esta cuadricula.

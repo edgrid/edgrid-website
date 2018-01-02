@@ -1,16 +1,15 @@
-extends ../includes/template
+extends ../config/template
+append config
+  -title = "Base"
+  -description = "Bla bla bla"
+  -active = "Casos de éxito"
 
 block main
-  include ../includes/navigation
-    block link-section
-      - var active = 'Casos de éxito';
   .main-banner
     .ed-container
       .ed-item.l-75.to-center
         img(src="https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg").main-banner__img
         .main-banner__data
           h1 Casos de éxito
+
   .ed-container.main-section
-    include ../includes/menu
-    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
-  include ../includes/footer

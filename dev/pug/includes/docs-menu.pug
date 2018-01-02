@@ -5,11 +5,8 @@ block link-section
 
 aside(itemscope="itemscope" itemtype="http://schema.org/WPSideBar" role="complementary").ed-item.l-25.main-sidebar.sidebar-first
   .vertical-menu-toggle.to-l(data-content="Filtros")
-  nav(itemscope itemtype="http://schema.org/WPSideBar").vertical-menu
+  nav(itemscope itemtype="http://schema.org/WPSideBar").vertical-menu#docs-menu
     ul
       each val, key in sidebar
         li(itemprop="url")
-          if active === key
-            a.active(href=val itemprop="name" title=key)= key
-          else
-            a(href=val itemprop="name" title=key)= key
+          a(href=val itemprop="name" title=key)= key

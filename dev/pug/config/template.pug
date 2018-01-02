@@ -1,13 +1,17 @@
+block config
+  include config
+
 doctype html
 html(lang="es")
   head
-    title EDgrid | EDteam
+    title= title
     meta(charset="utf-8")
     meta(name="viewport" content="initial-scale=1.0, width=device-width")
+    meta(name="description" content= description)
     link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:400,400i,700|Open+Sans:700")
     link(rel="stylesheet" href="css/styles.css")
-  body
-    block header
+  body(class= active)
+    include ../includes/header
     block main
-    include footer
+    include ../includes/footer
     script(src="js/scripts.js")

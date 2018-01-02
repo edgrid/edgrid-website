@@ -1,11 +1,12 @@
-extends ../includes/template
+extends ../config/template
+append config
+  -title = "Base"
+  -description = "Bla bla bla"
+  -active = "Sass"
 
 block main
-  include ../includes/navigation
   .ed-container.main-section
-    include ../includes/menu
-      block link-section
-        - var active = 'Sass';
+    include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Sass
       p Si va a trabajar con Sass, tenga en cuenta que 

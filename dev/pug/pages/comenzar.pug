@@ -1,9 +1,12 @@
-extends ../includes/template
+extends ../config/template
+append config
+  -title = "Base"
+  -description = "Bla bla bla"
+  -active = "Changelog"
 
 block main
-  include ../includes/navigation
   .ed-container.main-section
-    include ../includes/menu
+    include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Comenzar con EDgrid
       p Puede usar EDgrid con CSS y Sass.
@@ -27,4 +30,3 @@ block main
               | (asegúrese de añadir EDgrid al .gitignore de su proyecto)
             li Importar ed-grid.scss en su proyecto 
               code @import "path/ed-grid/ed-grid"
-  include ../includes/footer

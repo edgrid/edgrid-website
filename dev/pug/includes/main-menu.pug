@@ -1,0 +1,9 @@
+block link-section
+  - var active = 'Documentación';
+  
+- var menu = { 'Documentación': '/comenzar.html', 'Casos de éxito': '/casos-exito.html', 'Changelog': '/changelog.html', 'Créditos': '/creditos.html', 'Ir a EDteam': '//ed.team/' };
+
+ul
+  each val, key in menu
+    li(itemprop="url")
+      a(href=val itemprop="name" title=key)= key

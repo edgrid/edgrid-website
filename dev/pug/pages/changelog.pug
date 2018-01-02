@@ -1,9 +1,10 @@
-extends ../includes/template
+extends ../config/template
+append config
+  -title = "Base"
+  -description = "Bla bla bla"
+  -active = "Changelog"
 
 block main
-  include ../includes/navigation
-    block link-section
-      - var active = 'Changelog';
   .main-banner--dark.main-banner
     .ed-container
       .ed-item.l-75.to-center
@@ -11,6 +12,3 @@ block main
         .main-banner__data
           h1 Changelog
   .ed-container.main-section
-    include ../includes/menu
-    main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
-  include ../includes/footer

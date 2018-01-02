@@ -1,11 +1,12 @@
-extends ../includes/template
+extends ../config/template
+append config
+  -title = "Base"
+  -description = "Bla bla bla"
+  -active = "Helpers (CSS/Sass)"
 
 block main
-  include ../includes/navigation
   .ed-container.main-section
-    include ../includes/menu
-      block link-section
-        - var active = 'Helpers (CSS/Sass)';
+    include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
       h1 Helpers (CSS/Sass)
       p Los helpers son ayudas al trabajo que fueron llamadas utilidades en la versión anterior de ed-grid. Se pueden usar con CSS (cssHelpers) o Sass.
