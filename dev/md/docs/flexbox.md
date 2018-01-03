@@ -217,7 +217,7 @@ Puede combinar alineaciones para el eje principal y secundario
 ### Columna en reversa (de abajo hacia arriba)
 #### Versión con css
 
-```markdown
+```markup
 <!-- version con css -->
 <div class="flex-column-reverse">
   <div>1</div>
