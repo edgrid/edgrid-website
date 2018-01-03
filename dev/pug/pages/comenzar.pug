@@ -1,32 +1,11 @@
 extends ../config/template
 append config
-  -title = "Base"
-  -description = "Bla bla bla"
-  -active = "Changelog"
+  -title = "EDgrid | Comenzar"
+  -description = "Puede usar EDgrid con CSS y Sass."
+  -ogUrl= "/comenzar.html"
 
 block main
   .ed-container.main-section
     include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
-      h1 Comenzar con EDgrid
-      p Puede usar EDgrid con CSS y Sass.
-      h2 CSS
-      ul
-        li Descargar la última versión desde 
-         a(href="https://github.com/escueladigital/EDgrid/archive/master.zip") https://github.com/escueladigital/EDgrid/archive/master.zip
-        li Descomprimir y copiar el archivo 
-          code css/ed-grid.css
-          | (desarrollo) o 
-          code css/ed-grid.min.css
-          | (producción) a su proyecto.
-      h2 Sass
-      ul
-        li Instalar EDgrid (dos formas)
-          ul
-            li Con npm
-              code npm install --save ed-grid
-            li Clonando el repositorio dentro de su proyecto 
-              code git clone https://github.com/escueladigital/EDgrid.git
-              | (asegúrese de añadir EDgrid al .gitignore de su proyecto)
-            li Importar ed-grid.scss en su proyecto 
-              code @import "path/ed-grid/ed-grid"
+      include:markdown-it ../../md/docs/comenzar.md
