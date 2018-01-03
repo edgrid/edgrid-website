@@ -82,7 +82,7 @@ gulp.task('copy', function() {
   .pipe(gulp.dest('./public/images'))
 });
 
-gulp.task('default', () => {
+gulp.task('default', ['styles', 'pug', 'scripts', 'images', 'copy'], () => {
   server.init({
     server: {
       baseDir: './public'
