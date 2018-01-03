@@ -10,3 +10,10 @@ export const activeMenuItem = menu => {
 
 activeMenuItem(document.getElementById('main-menu'));
 activeMenuItem(document.getElementById('docs-menu'));
+
+let linkExternal = document.getElementById("main-menu").querySelectorAll('a');
+for (let value of linkExternal.values()) {
+  if (value.href == "https://ed.team/") {
+    value.setAttribute('target', '_blank')
+  }
+}
