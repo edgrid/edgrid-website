@@ -12,3 +12,7 @@ body {
 .button--last{
   margin-right: 0;
 }
+
+.data-list li :first-child {
+  max-width: 75%;
+}
