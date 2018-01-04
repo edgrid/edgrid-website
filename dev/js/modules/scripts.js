@@ -8,8 +8,8 @@ export const activeMenuItem = menu => {
   })
 };
 
-activeMenuItem(document.getElementById('main-menu'));
-activeMenuItem(document.getElementById('docs-menu'));
+if (document.getElementById('docs-menu')) activeMenuItem(document.getElementById('main-menu'));
+if (document.getElementById('docs-menu')) activeMenuItem(document.getElementById('docs-menu'));
 
 let linkExternal = document.getElementById("main-menu").querySelectorAll('a');
 for (let value of linkExternal.values()) {
