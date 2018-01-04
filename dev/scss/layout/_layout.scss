@@ -40,3 +40,12 @@
     }  
   }
 }
+
+
+footer{
+  .main-footer--content{
+    [class*=icon].space:before{
+      margin-left: .3em;
+    }
+  }
+}
