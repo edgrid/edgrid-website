@@ -1,4 +1,3 @@
-# Comenzar con EDgrid
 Puede usar EDgrid con CSS y Sass.
 ## CSS
 * Descargar la última versión desde https://github.com/escueladigital/EDgrid/archive/master.zip
