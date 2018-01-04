@@ -12,8 +12,8 @@ $cssHelpers: true;
 ```
 
 Se recomienda añadir los siguientes plugins de postCSS al compilar la versión Sass:
-- <a href="http://autoprefixer.github.io/" target="_blank">autoprefixer</a> añade los prefijos necesarios para asegurar compatibilidad entre navegadores
-- <a href="http://cssnano.co/" target="_blank">cssnano</a> - minifica, optimiza y compacta el código CSS.
+- <a href="http://autoprefixer.github.io/" target="_blank">autoprefixer <span class="icon-link-external"></span></a> añade los prefijos necesarios para asegurar compatibilidad entre navegadores
+- <a href="http://cssnano.co/" target="_blank">cssnano <span class="icon-link-external"></span></a> - minifica, optimiza y compacta el código CSS.
 
 El siguiente es un flujo recomendado con Gulp
 
