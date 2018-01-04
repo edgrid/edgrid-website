@@ -1,24 +1,25 @@
 extends ../config/template
+include ../includes/banner
 append config
   -title = "EDgrid | Libreria CSS/Sass para construir layouts responsive"
   -description = "Libreria CSS/Sass para construir layouts responsive"
   -ogUrl = "/index.html"
 
-block main
-  .main-banner--.main-banner
-    .ed-container
-      .ed-item.l-75.to-center
-        img(src="https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg").main-banner__img
-        .main-banner__data
-          h1 EDgrid
-          p.subtitle Libreria CSS/Sass para construir layouts responsive
-          .center
-            a.button--cta.small(href="https://edlabs.slack.com" target="_blank" title="Slack de EDgrid")
-              span.icon-slack.space Slack
-            a.button--dark.small(href="https://github.com/escueladigital/EDgrid" target="_blank" title="Github de EDgrid")
-              span.icon-github.space Github
-            a.button--tertiary.button--last.small(href="comenzar.html" title="Documentación de EDgrid")
-              span.icon-docs.space Documentación
+  -img = "https://static.pexels.com/photos/574073/pexels-photo-574073.jpeg"
+  -title = "EDgrid"
+  -description = "Libreria CSS/Sass para construir layouts responsive"
+  -clase = ""
+  -boton = ""
+  -boton = ""
+  -botonClass= ""
+  -botonUrl=""
+  -botonIco= ""
+  -botonText =""
+  -botones = "si"
+
+block main 
+  +banner(img, title, description, clase, boton, botonClass, botonUrl, botonIco, botonText, botones)
+
   .main-features
     .ed-container
       h2.to-center El responsive web design nunca fue tan sencillo

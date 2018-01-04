@@ -1,14 +1,21 @@
 extends ../config/template
+include ../includes/banner
 append config
   -title = "EDgrid | Créditos"
   -description = "Créditos de quien realizo la librería, colaboro desarrollando el portal."
   -ogUrl = "/creditos.html"
 
+  -img = "https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg"
+  -title = "Créditos"
+  -description = "Gracias a todas las personas que contribuyeron a crear este gran proyecto"
+  -clase = "accent"
+  -boton = ""
+  -botonClass= ""
+  -botonUrl=""
+  -botonIco= ""
+  -botonText =""
+  -botones = ""
+
 block main
-  .main-banner--accent.main-banner
-    .ed-container
-      .ed-item.l-75.to-center
-        img(alt="" src="https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg").main-banner__img
-        .main-banner__data
-          h1 Créditos
+  +banner(img, title, description, clase, boton, botonClass, botonUrl, botonIco, botonText, botones)
   .ed-container.main-section

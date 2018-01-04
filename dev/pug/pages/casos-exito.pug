@@ -1,14 +1,21 @@
 extends ../config/template
+include ../includes/banner
 append config
-  -title = "EDgrid | Casos de éxito"
+  -title = "Casos de éxito"
   -description = "Casos de éxito que se encuentran actualmente en producción y que utilizan la librería de EDgrid."
   -ogUrl = "/casos-exito.html"
 
+  -img = "https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg"
+  -title = "Casos de Éxito"
+  -description = "Los resultados nos respaldan, aqui una seleción de los mas significativos proyectos realizados por miembros de la Comunidad EDteam, empresas y más"
+  -clase = ""
+  -boton = ""
+  -botonClass= ""
+  -botonUrl=""
+  -botonIco= ""
+  -botonText =""
+  -botones = ""
+
 block main
-  .main-banner
-    .ed-container
-      .ed-item.l-75.to-center
-        img(alt="" src="https://static.pexels.com/photos/546819/pexels-photo-546819.jpeg").main-banner__img
-        .main-banner__data
-          h1 Casos de éxito
+  +banner(img, title, description, clase, boton, botonClass, botonUrl, botonIco, botonText, botones)
   .ed-container.main-section
