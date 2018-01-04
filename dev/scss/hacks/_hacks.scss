@@ -13,6 +13,64 @@ body {
   margin-right: 0;
 }
 
+// Añadir a guia de estilos
+// Ajusta el primer elemento de un data-list para no deformar el botón
 .data-list li :first-child {
   max-width: 75%;
+}
+
+// Añadir a guia de estilos
+:not(pre) code {
+  font-family : Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+  background : rgba($borderColor,.5);
+  font-size: fontSize(small);
+  padding : 0 .3em;
+  margin-right: .2rem;
+}
+
+// Añadir a guia de estilos
+.vertical-menu {
+  border-right : 1px solid $borderColor;
+  li {
+    padding : .4em 0;
+    border-bottom : none;
+  }
+
+  .active {
+    border-bottom: 1px solid $borderColor;
+    border-top: 1px solid $borderColor;
+    margin-right: -1px;
+    padding: .5em 0;
+    border-right: 1px solid $bodyBg;
+
+    &::after {
+      background : url(../images/icon-right.svg) 100%/contain no-repeat !important;
+      margin-right : 1rem;
+    }
+  }
+}
+
+// Añadir al layout de la guia de estilos
+.main-header + .main-section {
+  margin-top : 4rem;
+}
+
+.main-main {
+  ul {
+    padding-left : 0;
+    margin-left : 2rem;
+  }
+}
+
+.main-menu {
+  a:hover {
+    text-decoration : none;
+  }
+  .active {
+    color: $thirdColor;
+  }
+}
+
+.main-footer {
+  margin-top : 4rem;
 }
