@@ -1,6 +1,6 @@
 extends ../config/template
 append config
-  -title = "EDgrid | Comenzar"
+  -title = "EDgrid | Documentación"
   -description = "Puede usar EDgrid con CSS y Sass."
   -ogUrl= "/comenzar.html"
 
@@ -8,9 +8,10 @@ block main
   .main-banner.main-banner--secondary
     .ed-container
       .ed-item.l-75.to-center
-        img(alt="" src="https://static.pexels.com/photos/265152/pexels-photo-265152.jpeg").main-banner__img
+        img(alt="" src="images/docs-banner.jpg").main-banner__img
         .main-banner__data
           h1 Documentación de EDgrid
+          p.subtitle EDgrid es muy fácil de aprender, en treinta minutos estará usándolo en sus proyectos.
   .ed-container.main-section
     include ../includes/docs-menu
     main(itemscope itemprop="mainContentOfPage" role="main").ed-item.l-75.main-main
