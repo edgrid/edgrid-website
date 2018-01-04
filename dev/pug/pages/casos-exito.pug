@@ -1,5 +1,6 @@
 extends ../config/template
 include ../includes/banner
+include ../includes/cards
 append config
   -title = "Casos de éxito"
   -description = "Casos de éxito que se encuentran actualmente en producción y que utilizan la librería de EDgrid."
@@ -8,7 +9,9 @@ append config
   -img = "https://envato-shoebox-0.imgix.net/76f4/e0bc-34d8-43ef-9366-38458ab3b1e1/K-136-Tong-4102.jpg?w=800&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalpha=18&markalign=center%2Cmiddle&auto=compress%2Cformat&s=a04723c0d140cbef5ec4955f80265602"
   -title = "Casos de Éxito"
   -description = "Los resultados nos respaldan, aqui una seleción de los mas significativos proyectos realizados por miembros de la Comunidad EDteam, empresas y más"
-  -clase = ""
+
+    //- Variables de los banners
+  -clase = "tertiary"
   -boton = ""
   -botonClass= ""
   -botonUrl=""
@@ -16,6 +19,31 @@ append config
   -botonText =""
   -botones = ""
 
+
+  //- Variables de las cards 
+  //- array: cardImage, cardTitle, cardSub, cardText, cardlink, user, imageUser, nameUser,  linkuser
+
+  //--card1 = ["../images/ed-team-web.PNG", "EDteam", "Web oficial de EDteam", "Plataforma dedicada a la enseñanza de programación, diseño web y todo lo referente al mundo de desarrollo web.", "EDteam", "https://ed.team/"]
+
+  -card1 = ["../images/ed-team-web.PNG", "EDteam", "Web oficial de EDteam", "Plataforma dedicada a la enseñanza de programación, diseño web y todo lo referente al mundo de desarrollo web.", "https://ed.team/", "no", "", ""]
+  -card2 = ["../images/map-chile-web.png", "Map", "Agencia de selección y Outsourcing", "MAP es una Agencia encargada de captación de nuevos talentos para empresas.", "http://www.map-chile.cl/", "no", "", ""]
+  -card3 = ["../images/wizardgva-web.png", "Wizardgva", "Agencia de soluciones TI", "Wizardgva nace del sueño de un joven por brindar soluciones de hardware rápidas y accesibles", "https://wizardgva.com/", "Danny Restrepo", "../images/wizardgva-user.png", "https://www.linkedin.com/in/restrepodanny/"]
+  -card4 = ["../images/alkila-web.png", "Alkila", "Empresa de reta de autos", "Alkila es una empresa Peruana dedicada al rubro de alquiler de vehículos.", "http://alkilarentacar.com", "no", "", ""]
+  -card5 = ["../images/gema-web.png", "Agencia Gema", "Agencia de eventos", "En Gema, son especialistas en el servicio de banquetes y renta de equipo para todo tipo de eventos", "http://agenciagema.com/", "no", "", ""]
+  -card6 = ["../images/starwars-web.png", "Carlos - Star Wars project", "Proyecto", "Esta web es un poryecto personal usando EDgrid y Angular.", "https://carlosmanotas.github.io/star-wars-ng2/", "Carlos Manotas", "../images/starwars-user.png", "https://github.com/CarlosManotas"]
+
 block main
   +banner(img, title, description, clase, boton, botonClass, botonUrl, botonIco, botonText, botones)
   .ed-container.main-section
+    .ed-item.l-50.to-center
+      +card(card1[0], card1[1], card1[2], card1[3], card1[4], card1[5], card1[6], card1[7], card1[8], card1[9])
+    .ed-item.l-50.to-center
+      +card(card2[0], card2[1], card2[2], card2[3], card2[4], card2[5], card2[6], card2[7], card2[8], card2[9])
+    .ed-item.l-50.to-center
+      +card(card3[0], card3[1], card3[2], card3[3], card3[4], card3[5], card3[6], card3[7], card3[8], card3[9])
+    .ed-item.l-50.to-center
+      +card(card4[0], card4[1], card4[2], card4[3], card4[4], card4[5], card4[6], card4[7], card4[8], card4[9])
+    .ed-item.l-50.to-center
+      +card(card5[0], card5[1], card5[2], card5[3], card5[4], card5[5], card5[6], card5[7], card5[8], card5[9])
+    .ed-item.l-50.to-center
+      +card(card6[0], card6[1], card6[2], card6[3], card6[4], card6[5], card6[6], card6[7], card6[8], card6[9])

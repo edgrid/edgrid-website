@@ -8,7 +8,7 @@ mixin banner(img, title, description, clase, boton, botonClass, botonUrl, botonI
           if (description !== '')
             p.subtitle= description
           if (boton)
-            a(class='button--'+botonClass+' '+ botonIco '' href=botonUrl target="_blank" title=botonText).center botonText
+            a(class='button--'+botonClass+' '+ botonIco '' href=botonUrl target="_blank" title=botonText).center=botonText
           if (botones)
             .center
               a.button--cta.small(href="https://edlabs.slack.com" target="_blank" title="Slack de EDgrid")
