@@ -14,6 +14,8 @@ import buffer from 'vinyl-buffer';
 import imagemin from 'gulp-imagemin';
 import pngcrush from 'imagemin-pngcrush';
 import notify from 'gulp-notify';
+import data from 'gulp-data';
+import fs from 'fs';
 
 const server = browserSync.create();
 
@@ -46,6 +48,9 @@ gulp.task('styles', () =>
 gulp.task('pug', () =>
   gulp.src('./dev/pug/pages/*.pug')
     .pipe(plumber())
+    .pipe(data(function(file) {
+      return JSON.parse(fs.readFileSync('./dev/data/casos-de-exito.json'))
+    }))
     .pipe(pug())
     .pipe(gulp.dest('./public'))
 );
@@ -96,7 +101,7 @@ gulp.task('default', ['styles', 'pug', 'scripts', 'images', 'copy'], () => {
   watch('./dev/scss/**/*.scss', () => gulp.start('styles'));
   watch('./dev/js/**/*.js', () => gulp.start('scripts',server.reload) );
   watch('./dev/pug/**/*.pug', () => gulp.start('pug', server.reload) );
-  watch('./dev/md/docs/**/*.md', () => gulp.start('pug', server.reload) );//tarea para que compile pug cuando se modifica algun md en el directorio docs, antes de esta tarea, se tenia que modificar un archivo pug para que recien compie y muestre los cambios en md
+  watch('./dev/md/docs/**/*.md', () => gulp.start('pug', server.reload) );
   watch('./dev/images/**/*.{png,jpg,jpeg,gif}', () => gulp.start('images') );
   watch('./dev/images/**/*.svg', () => gulp.start('copy') );
 });
