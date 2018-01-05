@@ -19,6 +19,56 @@
       "user": "no",
       "imageUser": "",
       "linkUser": ""
-    }
+    },
+      {
+      "img": "../images/wizardgva-web.png",
+      "title": "Wizardgva",
+      "subtitle": "Agencia de soluciones TI",
+      "description": "Wizardgva nace del sueño de un joven por brindar soluciones de hardware rápidas y accesibles",
+      "url": "https://wizardgva.com/",
+      "user": "Danny Restrepo",
+      "imageUser": "../images/wizardgva-user.png",
+      "linkUser": "https://www.linkedin.com/in/restrepodanny/"
+    },
+      {
+      "img": "../images/alkila-web.png",
+      "title": "Alkila",
+      "subtitle": "Empresa de reta de autos",
+      "description": "Alkila es una empresa Peruana dedicada al rubro de alquiler de vehículos.",
+      "url": "http://alkilarentacar.com",
+      "user": "no",
+      "imageUser": "",
+      "linkUser": ""
+    },
+      {
+      "img": "../images/gema-web.png",
+      "title": "Agencia Gema",
+      "subtitle": "Agencia de eventos",
+      "description": "En Gema, son especialistas en el servicio de banquetes y renta de equipo para todo tipo de eventos",
+      "url": "http://agenciagema.com/",
+      "user": "no",
+      "imageUser": "",
+      "linkUser": ""
+    },
+    {
+      "img": "../images/starwars-web.png",
+      "title": "Carlos - Star Wars project",
+      "subtitle": "Proyecto",
+      "description": "Esta web es un poryecto personal usando EDgrid y Angular.",
+      "url": "https://carlosmanotas.github.io/star-wars-ng2/",
+      "user": "Carlos Manotas",
+      "imageUser": "../images/starwars-user.png",
+      "linkUser": "https://github.com/CarlosManotas"
+    },
+    {
+      "img": "../images/starwars-web.png",
+      "title": "CrispCakes",
+      "subtitle": "Microempresa",
+      "description": "Microempresa dedicada a la producción de Cakes",
+      "url": "http://crispcakes.tk/index.html",
+      "user": "Jaime Falquez",
+      "imageUser": "../images/starwars-user.png",
+      "linkUser": "https://www.facebook.com/rinnenedo?fref=gc&dti=1752954624922544"
+    }  
   ]
 }
