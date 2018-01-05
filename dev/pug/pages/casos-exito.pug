@@ -7,8 +7,8 @@ append config
   -ogUrl = "/casos-exito.html"
 
   -img = "https://envato-shoebox-0.imgix.net/76f4/e0bc-34d8-43ef-9366-38458ab3b1e1/K-136-Tong-4102.jpg?w=800&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalpha=18&markalign=center%2Cmiddle&auto=compress%2Cformat&s=a04723c0d140cbef5ec4955f80265602"
-  -title = "Casos de Éxito"
-  -description = "Proyectos que usan EDgrid en producción"
+  -titleBanner = "Casos de Éxito"
+  -descriptionBanner = "Proyectos que usan EDgrid en producción"
 
     //- Variables de los banners
   -clase = "tertiary"
@@ -32,7 +32,7 @@ append config
   -card6 = ["../images/starwars-web.png", "Carlos - Star Wars project", "Proyecto", "Esta web es un poryecto personal usando EDgrid y Angular.", "https://carlosmanotas.github.io/star-wars-ng2/", "Carlos Manotas", "../images/starwars-user.png", "https://github.com/CarlosManotas"]
 
 block main
-  +banner(img, title, description, clase, boton, botonClass, botonUrl, botonIco, botonText, botones)
+  +banner(img, titleBanner, descriptionBanner, clase, boton, botonClass, botonUrl, botonIco, botonText, botones)
   main.main-section
     .ed-container
       .ed-item.cards-grid
