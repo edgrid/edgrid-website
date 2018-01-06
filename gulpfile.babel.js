@@ -57,7 +57,7 @@ gulp.task('pug', () =>
 
 gulp.task('scripts', () =>
   browserify('./dev/js/index.js')
-    .transform(babelify)
+    .transform(babelify,{global:true})
     .bundle()
     .on('error', function(err){
       console.error(err);
