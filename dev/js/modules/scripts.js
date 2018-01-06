@@ -6,7 +6,7 @@ export const activeMenuItem = menuId => {
   if(menu) {
     let links = Array.from(menu.querySelectorAll('a'));
     links.map( link => {
-      if (link.href === location.href) link.classList.add('active')
+      if (link.href === location.href) link.classList.add("active","icon-left","space");
     })
   }
 };
