@@ -1,6 +1,6 @@
 .main-banner {
   @include to(l) {
-    [class*="button"] {
+    .center [class*="button"] {
       font-size: fontSize(smaller);
       margin : .5em;
     }
