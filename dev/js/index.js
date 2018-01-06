@@ -1,7 +1,8 @@
 import {activeMenuItem} from "./modules/scripts";
-import {menu} from "../../node_modules/edteam-style-guides/dev/js/index.js";
+import {menu} from "../../node_modules/edteam-style-guides/dev/js/modules/menu";
 // import {customPrismJs} from "./modules/prism";
-
+menu('main-menu-toggle', 'main-menu');
+menu('vertical-menu-toggle', 'vertical-menu');
 /* PrismJS 1.9.0
 http://prismjs.com/download.html?themes=prism-okaidia&languages=markup+css+clike+javascript+scss&plugins=line-numbers+toolbar+show-language+copy-to-clipboard */
 var _self = (typeof window !== 'undefined')
