@@ -12,8 +12,16 @@
 }
 
 main {
-  padding-bottom :  4rem;
+  @include from(l) {
+    padding-bottom :  4rem;
+  }
   margin-bottom : 0 !important // conflicto con main-section;
+}
+
+.main-section {
+  @include to(l) {
+    margin-bottom : 0;
+  }
 }
 
 footer{
