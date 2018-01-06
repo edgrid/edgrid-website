@@ -105,3 +105,8 @@ pre {
 .card__footer {
   margin-top : auto;
 }
+
+// re-escribe el contenido de titulo del menu de documentacion en responsive
+.vertical-menu-toggle::after{
+  content: "Documentación"
+}

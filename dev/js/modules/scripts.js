@@ -12,4 +12,4 @@ export const activeMenuItem = menuId => {
 };
 
 activeMenuItem('main-menu');
-activeMenuItem('docs-menu');
+activeMenuItem('vertical-menu');
