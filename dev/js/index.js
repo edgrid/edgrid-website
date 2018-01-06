@@ -1,4 +1,5 @@
 import {activeMenuItem} from "./modules/scripts";
+import {menu} from "../../node_modules/edteam-style-guides/dev/js/index.js";
 // import {customPrismJs} from "./modules/prism";
 
 /* PrismJS 1.9.0
