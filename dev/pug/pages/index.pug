@@ -6,8 +6,8 @@ append config
   -ogUrl = "/index.html"
 
   -img = "https://static.pexels.com/photos/574073/pexels-photo-574073.jpeg"
-  -title = "EDgrid"
-  -description = "Libreria CSS/Sass para construir layouts responsive"
+  -titleBanner = "EDgrid"
+  -Bannerdescription = "Libreria CSS/Sass para construir layouts responsive"
   -clase = ""
   -boton = ""
   -botonClass= ""
@@ -17,9 +17,9 @@ append config
   -botones = "si"
 
 block main 
-  +banner(img, title, description, clase, boton, botonClass, botonUrl, botonIco, botonText, botones)
+  +banner(img, titleBanner, Bannerdescription, clase, boton, botonClass, botonUrl, botonIco, botonText, botones)
 
-  .main-features
+  main.main-features
     .ed-container
       h2.to-center El responsive web design nunca fue tan sencillo
       .ed-container
