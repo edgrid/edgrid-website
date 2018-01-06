@@ -15,8 +15,25 @@ body {
 
 // Añadir a guia de estilos
 // Ajusta el primer elemento de un data-list para no deformar el botón
-.data-list li :first-child {
-  max-width: 75%;
+.data-list li {
+  margin-bottom : 1rem;
+
+  :first-child {
+    margin-bottom : .5rem;
+
+    @include from(l) {
+      max-width: 75%;
+      margin-bottom : 0;
+    }
+  }
+
+  @include to(l) {
+    display : block;
+    
+    [class*="button"] {
+      font-size: fontSize(smaller);
+    }
+  }
 }
 
 // Añadir a guia de estilos
@@ -26,6 +43,7 @@ body {
   font-size: fontSize(small);
   padding : 0 .3em;
   margin-right: .2rem;
+  word-break: break-all;
 }
 
 // Añadir a guia de estilos
@@ -66,9 +84,23 @@ body {
   a:hover {
     text-decoration : none;
   }
+
   .active {
-    color: $thirdColor;
+
+    @include from(l) {
+      font-weight : 400;
+      color: $thirdColor;
+
+      &::before {
+        display : none;
+      }
+    }
   }
+}
+
+// Quitar icono de izquierda en vertical menu
+.vertical-menu .active::before {
+  display : none;
 }
 
 .main-footer {

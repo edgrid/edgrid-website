@@ -6,7 +6,7 @@ append config
   -description = "Casos de éxito que se encuentran actualmente en producción y que utilizan la librería de EDgrid."
   -ogUrl = "/casos-exito.html"
 
-  -img = "https://envato-shoebox-0.imgix.net/76f4/e0bc-34d8-43ef-9366-38458ab3b1e1/K-136-Tong-4102.jpg?w=800&fit=max&mark=https%3A%2F%2Felements-assets.envato.com%2Fstatic%2Fwatermark2.png&markalpha=18&markalign=center%2Cmiddle&auto=compress%2Cformat&s=a04723c0d140cbef5ec4955f80265602"
+  -img = "images/casos-de-exito-banner.jpg"
   -titleBanner = "Casos de Éxito"
   -descriptionBanner = "Proyectos que usan EDgrid en producción"
 
@@ -18,20 +18,6 @@ append config
   -botonIco= ""
   -botonText ="Envía tu proyecto"
   -botones = ""
-
-
-  //- Variables de las cards 
-  //- array: cardImage, cardTitle, cardSub, cardText, cardlink, user, imageUser, nameUser,  linkuser
-
-  //--card1 = ["../images/ed-team-web.PNG", "EDteam", "Web oficial de EDteam", "Plataforma dedicada a la enseñanza de programación, diseño web y todo lo referente al mundo de desarrollo web.", "EDteam", "https://ed.team/"]
-
-  -card2 = ["../images/map-chile-web.png", "Map", "Agencia de selección y Outsourcing", "MAP es una Agencia encargada de captación de nuevos talentos para empresas.", "http://www.map-chile.cl/", "no", "", ""]
-  -card3 = ["../images/wizardgva-web.png", "Wizardgva", "Agencia de soluciones TI", "Wizardgva nace del sueño de un joven por brindar soluciones de hardware rápidas y accesibles", "https://wizardgva.com/", "Danny Restrepo", "../images/wizardgva-user.png", "https://www.linkedin.com/in/restrepodanny/"]
-
-
-  -card4 = ["../images/alkila-web.png", "Alkila", "Empresa de reta de autos", "Alkila es una empresa Peruana dedicada al rubro de alquiler de vehículos.", "http://alkilarentacar.com", "no", "", ""]
-  -card5 = ["../images/gema-web.png", "Agencia Gema", "Agencia de eventos", "En Gema, son especialistas en el servicio de banquetes y renta de equipo para todo tipo de eventos", "http://agenciagema.com/", "no", "", ""]
-  -card6 = ["../images/starwars-web.png", "Carlos - Star Wars project", "Proyecto", "Esta web es un poryecto personal usando EDgrid y Angular.", "https://carlosmanotas.github.io/star-wars-ng2/", "Carlos Manotas", "../images/starwars-user.png", "https://github.com/CarlosManotas"]
 
 block main
   +banner(img, titleBanner, descriptionBanner, clase, boton, botonClass, botonUrl, botonIco, botonText, botones)

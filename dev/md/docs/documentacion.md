@@ -1,6 +1,6 @@
 Puede usar EDgrid con CSS y Sass.
 ## CSS
-* Descargar la última versión desde https://github.com/escueladigital/EDgrid/archive/master.zip
+* Descargar la última versión desde [Github](https://github.com/escueladigital/EDgrid/archive/master.zip)
 * Descomprimir y copiar el archivo `css/ed-grid.css` (desarrollo) o `css/ed-grid.min.css` (producción) a su proyecto.
 ## Sass
 * Instalar EDgrid (dos formas)
