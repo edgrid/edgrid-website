@@ -69,6 +69,16 @@
       "user": "Jaime Falquez",
       "imageUser": "../images/cripcakes-user.png",
       "linkUser": "https://www.facebook.com/rinnenedo?fref=gc&dti=1752954624922544"
-    }  
+    },
+    {
+      "img": "../images/robert-web.png",
+      "title": "Portfolio - Robert",
+      "subtitle": "Portfolio",
+      "description": "Esta web es el portfolio de Robert Huamán Cáceres, estudiante en Ingeniería informática y sistemas de la Universidad Nacional Micaela Bastidas de Apurímac - Perú",
+      "url": "https://pepobj.github.io/dist/",
+      "user": "Robert BJ Huamán Cáceres",
+      "imageUser": "../images/robert-user.png",
+      "linkUser": "https://www.linkedin.com/in/robert-bj-huaman/"
+    }      
   ]
 }
