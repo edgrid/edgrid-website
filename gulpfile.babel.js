@@ -100,7 +100,7 @@ gulp.task('default', ['styles', 'pug', 'scripts', 'images', 'copy'], () => {
 
   watch('./dev/scss/**/*.scss', () => gulp.start('styles'));
   watch('./dev/js/**/*.js', () => gulp.start('scripts',server.reload) );
-  watch('./dev/pug/**/*.pug', () => gulp.start('pug', server.reload) );
+  watch('./dev/data/**/*.json','./dev/pug/**/*.pug', () => gulp.start('pug', server.reload) );
   watch('./dev/md/docs/**/*.md', () => gulp.start('pug', server.reload) );
   watch('./dev/images/**/*.{png,jpg,jpeg,gif}', () => gulp.start('images') );
   watch('./dev/images/**/*.svg', () => gulp.start('copy') );
