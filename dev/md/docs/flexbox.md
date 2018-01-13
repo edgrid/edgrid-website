@@ -1,6 +1,6 @@
 # Flexbox (CSS/Sass)
 
-El core de ed-grid está construido con flexbox, cero floats, display:table, inline-blocks u otros hacks extraños. Sin embargo, ed-grid ofrece mcuhas utilidades extra para aprovechar el poder de flexbox.
+El core de ed-grid está construido con flexbox, cero floats, display:table, inline-blocks u otros hacks extraños. Sin embargo, ed-grid ofrece muchas utilidades extra para aprovechar el poder de flexbox.
 
 Estas utilidades están dentro de los helpers de CSS ($cssHelpers : true) por lo que se recomienda activarlos aunque su flujo de trabajo sea con Sass.
 
