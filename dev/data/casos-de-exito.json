@@ -36,9 +36,9 @@
       "subtitle": "Empresa de reta de autos",
       "description": "Alkila es una empresa Peruana dedicada al rubro de alquiler de vehículos.",
       "url": "http://alkilarentacar.com",
-      "user": "no",
-      "imageUser": "",
-      "linkUser": ""
+      "user": "Edwing Romero Rodriguez",
+      "imageUser": "/images/alkila-user.png",
+      "linkUser": "https://www.linkedin.com/in/edwingromero/"
     },
       {
       "img": "../images/gema-web.png",
@@ -87,8 +87,8 @@
       "description": "Empresa peruana dedicada a la exportación de indumentaria y accesorios para uso militar.",
       "url": "http://militaria.com.pe/",
       "user": "Edwing Romero Rodríguez",
-      "imageUser": "../images/militaria-user.png",
-      "linkUser": "mailto:edwing8957@gmail.com"
+      "imageUser": "../images/alkila-user.png",
+      "linkUser": "https://www.linkedin.com/in/robert-bj-huaman/"
     }   
   ]
 }
