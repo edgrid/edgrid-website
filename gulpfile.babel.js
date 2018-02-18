@@ -82,12 +82,17 @@ gulp.task('images', function() {
 });
 
 
-gulp.task('copy', function() {
- gulp.src('./dev/images/**/*.svg')
+gulp.task('copySvg', function() {
+ gulp.src(['./dev/images/**/*.svg'])
   .pipe(gulp.dest('./public/images'))
 });
 
-gulp.task('default', ['styles', 'pug', 'scripts', 'images', 'copy'], () => {
+gulp.task('copyFonts', function() {
+  gulp.src(['./dev/fonts/**.*'])
+    .pipe(gulp.dest('./public/fonts'))
+});
+
+gulp.task('default', ['styles', 'pug', 'scripts', 'images', 'copySvg', 'copyFonts'], () => {
   server.init({
     server: {
       baseDir: './public'
